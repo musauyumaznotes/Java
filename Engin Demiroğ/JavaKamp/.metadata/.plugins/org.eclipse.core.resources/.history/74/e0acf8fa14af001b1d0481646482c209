@@ -1,0 +1,7 @@
+package Business.validators;
+
+
+public interface Validator {
+	void registerValidator();
+	void logInValidator();
+}

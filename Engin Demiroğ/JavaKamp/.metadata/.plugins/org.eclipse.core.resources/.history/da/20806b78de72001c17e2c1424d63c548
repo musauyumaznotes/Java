@@ -1,0 +1,22 @@
+package springIntro_BTK;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+
+	public static void main(String[] args) {
+	String [] s1 = {"ali","melike","buse"};
+	String [] s2 =new String[5];
+	int i=0;
+	String[] s3 =s1;
+	String s4 = s3[1];
+	
+	for (;  i< s1.length; i++) {
+		s2[i] =s4.charAt(1+i) +s3[i];
+	}
+	String [] s5=s2;
+	String s6= s5[2] + "-" +s1[0].charAt(2) +s4;
+	System.out.println(s6 + ",");
+}
+	}

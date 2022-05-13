@@ -1,0 +1,8 @@
+package Abstract;
+
+public interface GameMakerService {
+	void add();
+	void update();
+	void delete();
+	void sell();
+}

@@ -1,0 +1,17 @@
+package Business.validators;
+
+public class Validate implements Validator {
+
+	@Override
+	public void registerValidator(User user) {
+		
+		
+	}
+
+	@Override
+	public void logInValidator(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

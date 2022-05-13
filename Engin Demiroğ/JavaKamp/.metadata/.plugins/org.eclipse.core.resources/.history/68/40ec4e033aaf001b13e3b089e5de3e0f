@@ -1,0 +1,9 @@
+package Business.validators;
+
+
+import Entities.concretes.User;
+
+public interface Validator {
+	 void registerIsValid(User user);
+	 void logInValidator(User user);
+}

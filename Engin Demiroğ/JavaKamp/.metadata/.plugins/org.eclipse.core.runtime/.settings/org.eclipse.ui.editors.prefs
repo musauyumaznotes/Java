@@ -1,0 +1,14 @@
+AbstractTextEditor.Color.Background=28,31,34
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+eclipse.preferences.version=1
+predarkestdark.AbstractTextEditor.Color.Background.SystemDefault=false
+predarkestdark.AbstractTextEditor.Color.Foreground.SystemDefault=false
+predarkestdark.AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+predarkestdark.AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+predarkestdark.currentIPColor=90,90,90
+predarkestdark.filteredSearchResultIndicationColor=27,98,145
+predarkestdark.searchResultIndicationColor=94,94,94
+predarkestdark.secondaryIPColor=90,90,90
+predarkestdark.writeOccurrenceIndicationColor=27,98,145

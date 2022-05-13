@@ -1,0 +1,20 @@
+package Business.validators;
+
+import Entities.concretes.User;
+
+public class UserValidator implements Validator{
+
+	@Override
+	public void registerIsValid(User user) {
+		user.getFirstName();
+		
+	}
+
+	@Override
+	public void logInIsValýd(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

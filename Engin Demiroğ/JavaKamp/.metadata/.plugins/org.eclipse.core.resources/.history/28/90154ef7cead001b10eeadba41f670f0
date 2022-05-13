@@ -1,0 +1,4 @@
+import Folder.A;
+public class GamerManager implements GamerService {
+
+}

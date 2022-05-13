@@ -1,0 +1,25 @@
+package springIntro_BTK;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+ArrayList<String> abc = new ArrayList<String>();
+abc.add("mavi");
+abc.add("mavi");
+abc.add("beyaz");
+String element ="mavi";
+	for (int i = 0; i < abc.size(); i++) {
+		if(abc.get(i).equals(element)) 
+		{
+			abc.remove(element);
+			i--;
+		}
+	}
+	for (String string : abc) {
+		System.out.println(string);
+	}
+}
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\JavaKamp\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+175637635.index
+399291590.index
+293003107.index
+410751567.index
+3020868590.index
+1459452135.index

@@ -1,0 +1,5 @@
+package Business.validators;
+
+public interface Validator {
+
+}

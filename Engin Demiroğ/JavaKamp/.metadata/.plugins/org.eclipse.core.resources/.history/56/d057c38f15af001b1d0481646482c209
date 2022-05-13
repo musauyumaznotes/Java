@@ -1,0 +1,21 @@
+package Business.validators;
+
+import Entities.abstracts.Entity;
+import Entities.concretes.User;
+
+public class UserValidator implements Validator{
+
+	@Override
+	public void registerValidator(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void logInValidator(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

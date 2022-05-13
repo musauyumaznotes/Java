@@ -1,0 +1,5 @@
+package Entities.concretes;
+
+public class User {
+
+}

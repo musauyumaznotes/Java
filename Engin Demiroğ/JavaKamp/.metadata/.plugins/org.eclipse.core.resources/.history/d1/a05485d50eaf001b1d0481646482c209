@@ -1,0 +1,45 @@
+package DataAccess.concretes.InMemory;
+
+import java.util.List;
+
+import DataAccess.abstracts.UserDao;
+import Entities.abstracts.Entity;
+import Entities.concretes.User;
+
+public class InMemoryUserDao implements UserDao{
+
+	@Override
+	public void add(User user) {
+		System.out.println("Kullanýcý eklendi" + user.getFirstName());
+		
+	}
+
+	@Override
+	public void update(User user) {
+		System.out.println("Kullanýcý güncellendi" + user.getFirstName());
+		
+	}
+
+	@Override
+	public void delete(User user) {
+		System.out.println("Kullanýcý sistemden silindi" + user.getFirstName());
+		
+	}
+
+	@Override
+	public User get(int id) {
+		System.out.println("Kullanýcý getirildi");
+		return null;
+		
+	}
+
+	@Override
+	public List<User> getAll() {
+		System.out.println("Kullanýcýlar getirildi");
+		return null;
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

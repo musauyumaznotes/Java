@@ -1,0 +1,22 @@
+package springIntro_BTK;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	
+
+	
+}
+	void combineMat(int[][] matris1,int[][] matris2) 
+	{
+		for(int i=0;i<matris1.length;i++) 
+		{
+			for(int j=0;j<matris1.length;j++) 
+			{
+				System.out.println(matris1[i][j]);
+			}
+		}
+		
+	}
+}

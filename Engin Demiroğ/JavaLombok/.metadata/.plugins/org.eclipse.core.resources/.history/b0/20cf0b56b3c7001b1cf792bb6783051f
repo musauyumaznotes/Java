@@ -1,0 +1,75 @@
+package kodlamaio.hrms.business.validationRules.concretes;
+
+
+
+import org.springframework.stereotype.Service;
+
+import kodlamaio.hrms.business.validationRules.abstracts.EmployerValidatorService;
+import kodlamaio.hrms.core.utilities.results.ErrorResult;
+import kodlamaio.hrms.core.utilities.results.Result;
+import kodlamaio.hrms.core.utilities.results.SuccessResult;
+import kodlamaio.hrms.dataAccess.abstracts.EmployerDao;
+import kodlamaio.hrms.entities.concretes.EmployeeConfirm;
+import kodlamaio.hrms.entities.concretes.EmployerActivation;
+
+
+
+@Service
+public class EmployerValidatorManager implements EmployerValidatorService{
+
+	private EmployerDao employerDao;
+	
+	
+	
+	public EmployerValidatorManager(EmployerDao employerDao) {
+		super();
+		this.employerDao = employerDao;
+	}
+
+	@Override
+	public Result passwordControl(String confirmPassword,String password) {
+		if (password.equals(confirmPassword)) {
+			return new SuccessResult();
+		}
+
+		return new ErrorResult();
+	}
+	
+
+	@Override
+	public Result activationControl(EmployerActivation employerActivation) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Result domainControl(String email, String webAddress) {
+		String[] emails = email.split("@", 2);
+		String domain = webAddress.substring(4, webAddress.length());
+
+		if (emails[1].equals(domain)) {
+
+			return new SuccessResult();
+		}
+
+		return new ErrorResult();
+	}
+	
+
+	@Override
+	public Result checkEmailExists(String email) {
+		if(employerDao.findByEmail(email) != null) {
+			return new ErrorResult();
+		}
+		return new SuccessResult();
+	}
+
+	private boolean setActivated(EmployerActivation employerActivation,EmployeeConfirm employeeConfirm) {
+		if (employerActivation.isConfirmCode()&&employeeConfirm.isConfirmed()) {
+			employerActivation.setActivated(true);
+		}
+		
+		return true;
+	}
+	
+}

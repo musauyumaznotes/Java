@@ -1,0 +1,7 @@
+package Business.validators;
+
+
+public interface Validator {
+	<T> void registerValidator(T Entity);
+	<T> void logInValidator(T Entity);
+}

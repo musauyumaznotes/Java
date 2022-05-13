@@ -1,0 +1,14 @@
+package Business.abstracts;
+
+import java.util.List;
+
+import Entities.concretes.User;
+
+public interface UserService {
+	void logIn(User user);
+	void add(User user);
+	void update(User user);
+	void delete(User user);
+	User get(int id);
+	List<User> getAll();
+}

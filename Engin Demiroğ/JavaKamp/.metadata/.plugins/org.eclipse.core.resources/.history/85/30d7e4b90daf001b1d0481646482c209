@@ -1,0 +1,14 @@
+package DataAccess.abstracts;
+
+import java.util.List;
+
+import Entities.abstracts.Entity;
+
+public interface UserDao {
+	void add(Entity entity);
+	void update(Entity entity);
+	void delete(Entity entity);
+	Entity entity get(int id);
+	List<Entity> getAll();
+	
+}

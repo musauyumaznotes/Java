@@ -1,0 +1,28 @@
+package kodlamaio.hrms.business.businessRules;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kodlamaio.hrms.core.utilities.results.Result;
+
+@Service
+public class BusinessRules {
+
+	@Autowired
+    public static Result Run(Result... results)
+    {		
+        for (Result result : results) {
+             if (!result.isSuccess()==true)
+            {
+                return result;
+            }
+        }
+        
+       	 return null;
+       
+
+       
+    }
+}
+
+

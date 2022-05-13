@@ -1,0 +1,5 @@
+package DataAccess.concretes.InMemory;
+
+public class InMemoryUserDao {
+
+}

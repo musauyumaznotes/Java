@@ -1,0 +1,31 @@
+package springIntro_BTK;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	
+
+	
+}
+public void combineMat(int[][] matris1,int[][] matris2) 
+{
+	int[][] matrisSonuc = new int[4][4];
+	for(int i=0;i<4;i++) 
+	{
+		for(int j=0;j<4;j++) 
+		{
+			
+			matrisSonuc[i][j]= 
+		}
+	}
+	for(int i=0;i<matris2.length;i++) 
+	{
+		for(int j=0;j<matris2.length;j++) 
+		{
+			matrisSonuc[i][j] =matris2.clone();
+		}
+	}
+		
+	}
+}

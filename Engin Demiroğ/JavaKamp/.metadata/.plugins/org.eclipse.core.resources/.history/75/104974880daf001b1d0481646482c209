@@ -1,0 +1,12 @@
+package DataAccess.abstracts;
+
+import Entities.abstracts.Entity;
+
+public interface UserDao {
+	void add(Entity entity);
+	void update(Entity entity);
+	void delete(Entity entity);
+	void get(Entity entity);
+	void getAll(Entity entity);
+	
+}

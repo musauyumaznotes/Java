@@ -1,0 +1,6 @@
+import org.w3c.dom.Entity;
+
+public class GameMaker implements Entity {
+	int id;
+	String nickName;
+}

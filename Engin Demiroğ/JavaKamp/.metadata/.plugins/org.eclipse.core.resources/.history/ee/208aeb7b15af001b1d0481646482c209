@@ -1,0 +1,8 @@
+package Business.validators;
+
+import Entities.abstracts.Entity;
+
+public interface Validator {
+	 void registerValidator(User user);
+	 void logInValidator(Entity entity);
+}
