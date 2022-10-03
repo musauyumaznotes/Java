@@ -6,6 +6,7 @@ public class MainClass {
 		// TODO Auto-generated method stub
 			System.err.println("Hello Git");
 			System.err.println("Hello Git 2");
+			System.err.println("Hello Git 3");
 	}
 
 }
