@@ -7,6 +7,7 @@ public class MainClass {
 			System.err.println("Hello Git");
 			System.err.println("Hello Git 2");
 			System.err.println("Hello Git 3");
+			System.err.println("Hello Git 4");
 	}
 
 }
